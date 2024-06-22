@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B68FEC6B2C12CF860095329F /* Challenge3EdutainmentAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FEC6A2C12CF860095329F /* Challenge3EdutainmentAppApp.swift */; };
+		B68FEC6F2C12CF890095329F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B68FEC6E2C12CF890095329F /* Assets.xcassets */; };
+		B68FEC722C12CF890095329F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B68FEC712C12CF890095329F /* Preview Assets.xcassets */; };
+		B68FEF922C1485490095329F /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FEF912C1485490095329F /* FirstPage.swift */; };
+		B68FEF942C148CAC0095329F /* SecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FEF932C148CAC0095329F /* SecondPage.swift */; };
+		B6D541112C26C4060083357B /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = B6D541102C26C4060083357B /* GoogleGenerativeAI */; };
+		B6D541132C26C5930083357B /* testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D541122C26C5930083357B /* testing.swift */; };
+		B6D541152C26C7230083357B /* GenerativeAI_Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6D541142C26C7230083357B /* GenerativeAI_Info.plist */; };
+		B6D541172C26C7A20083357B /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D541162C26C7A20083357B /* APIKey.swift */; };
+		B6D541192C26EB540083357B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D541182C26EB540083357B /* Question.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B68FEC672C12CF860095329F /* Challenge3EdutainmentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge3EdutainmentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B68FEC6A2C12CF860095329F /* Challenge3EdutainmentAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge3EdutainmentAppApp.swift; sourceTree = "<group>"; };
+		B68FEC6E2C12CF890095329F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B68FEC712C12CF890095329F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B68FEF912C1485490095329F /* FirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPage.swift; sourceTree = "<group>"; };
+		B68FEF932C148CAC0095329F /* SecondPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPage.swift; sourceTree = "<group>"; };
+		B6D541122C26C5930083357B /* testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testing.swift; sourceTree = "<group>"; };
+		B6D541142C26C7230083357B /* GenerativeAI_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GenerativeAI_Info.plist; sourceTree = "<group>"; };
+		B6D541162C26C7A20083357B /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		B6D541182C26EB540083357B /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B68FEC642C12CF860095329F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D541112C26C4060083357B /* GoogleGenerativeAI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B68FEC5E2C12CF860095329F = {
+			isa = PBXGroup;
+			children = (
+				B68FEC692C12CF860095329F /* Challenge3EdutainmentApp */,
+				B68FEC682C12CF860095329F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B68FEC682C12CF860095329F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B68FEC672C12CF860095329F /* Challenge3EdutainmentApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B68FEC692C12CF860095329F /* Challenge3EdutainmentApp */ = {
+			isa = PBXGroup;
+			children = (
+				B68FEC6A2C12CF860095329F /* Challenge3EdutainmentAppApp.swift */,
+				B6D541142C26C7230083357B /* GenerativeAI_Info.plist */,
+				B68FEF912C1485490095329F /* FirstPage.swift */,
+				B68FEF932C148CAC0095329F /* SecondPage.swift */,
+				B6D541122C26C5930083357B /* testing.swift */,
+				B6D541182C26EB540083357B /* Question.swift */,
+				B6D541162C26C7A20083357B /* APIKey.swift */,
+				B68FEC6E2C12CF890095329F /* Assets.xcassets */,
+				B68FEC702C12CF890095329F /* Preview Content */,
+			);
+			path = Challenge3EdutainmentApp;
+			sourceTree = "<group>";
+		};
+		B68FEC702C12CF890095329F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B68FEC712C12CF890095329F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B68FEC662C12CF860095329F /* Challenge3EdutainmentApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B68FEC752C12CF890095329F /* Build configuration list for PBXNativeTarget "Challenge3EdutainmentApp" */;
+			buildPhases = (
+				B68FEC632C12CF860095329F /* Sources */,
+				B68FEC642C12CF860095329F /* Frameworks */,
+				B68FEC652C12CF860095329F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Challenge3EdutainmentApp;
+			packageProductDependencies = (
+				B6D541102C26C4060083357B /* GoogleGenerativeAI */,
+			);
+			productName = Challenge3EdutainmentApp;
+			productReference = B68FEC672C12CF860095329F /* Challenge3EdutainmentApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B68FEC5F2C12CF860095329F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					B68FEC662C12CF860095329F = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = B68FEC622C12CF860095329F /* Build configuration list for PBXProject "Challenge3EdutainmentApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B68FEC5E2C12CF860095329F;
+			packageReferences = (
+				B6D5410F2C26C4060083357B /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+			);
+			productRefGroup = B68FEC682C12CF860095329F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B68FEC662C12CF860095329F /* Challenge3EdutainmentApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B68FEC652C12CF860095329F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B68FEC722C12CF890095329F /* Preview Assets.xcassets in Resources */,
+				B68FEC6F2C12CF890095329F /* Assets.xcassets in Resources */,
+				B6D541152C26C7230083357B /* GenerativeAI_Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B68FEC632C12CF860095329F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B68FEF922C1485490095329F /* FirstPage.swift in Sources */,
+				B68FEF942C148CAC0095329F /* SecondPage.swift in Sources */,
+				B68FEC6B2C12CF860095329F /* Challenge3EdutainmentAppApp.swift in Sources */,
+				B6D541192C26EB540083357B /* Question.swift in Sources */,
+				B6D541132C26C5930083357B /* testing.swift in Sources */,
+				B6D541172C26C7A20083357B /* APIKey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B68FEC732C12CF890095329F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B68FEC742C12CF890095329F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B68FEC762C12CF890095329F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Challenge3EdutainmentApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.panwar.aryan.Challenge3EdutainmentApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B68FEC772C12CF890095329F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Challenge3EdutainmentApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.panwar.aryan.Challenge3EdutainmentApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B68FEC622C12CF860095329F /* Build configuration list for PBXProject "Challenge3EdutainmentApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B68FEC732C12CF890095329F /* Debug */,
+				B68FEC742C12CF890095329F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B68FEC752C12CF890095329F /* Build configuration list for PBXNativeTarget "Challenge3EdutainmentApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B68FEC762C12CF890095329F /* Debug */,
+				B68FEC772C12CF890095329F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B6D5410F2C26C4060083357B /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google-gemini/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B6D541102C26C4060083357B /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6D5410F2C26C4060083357B /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B68FEC5F2C12CF860095329F /* Project object */;
+}
