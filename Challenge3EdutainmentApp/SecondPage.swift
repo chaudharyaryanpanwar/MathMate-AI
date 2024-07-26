@@ -33,7 +33,11 @@ struct SecondPage: View {
     @State private var alertTitle = ""
     @State private var isFinal = false
     @State private var isLoading = true
-    @State private var response = ""
+    @State private var response  = ""
+    
+    @State private var answerResponse : LocalizedStringKey = ""
+    @State private var showingSolutionSheet = false
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -133,6 +137,71 @@ struct SecondPage: View {
             .onAppear {
                 generateResponse()
             }
+            .sheet(isPresented: $showingSolutionSheet , onDismiss: {
+                showingSolutionSheet = false
+                if ( totalQuestions != numberOfQuestions ) {
+                    generateQuestion()
+                }
+                else {
+                    withAnimation(.bouncy(duration: 2)){
+                        isFinal = true
+                        isAlerting = false
+                    }
+                }
+                withAnimation {
+                    animationAngle += Angle(degrees: 360)
+                }
+            } ,content: {
+                VStack {
+                    Text("\(question ?? "") : ")
+                        .font(.title.bold().monospaced())
+                        .padding()
+                        .foregroundStyle(.white)
+                        .background(.ultraThinMaterial)
+                        .clipShape(.rect(cornerRadius: 10))
+                    
+                    if isLoading {
+                        ProgressView()
+                            .progressViewStyle(CircularProgressViewStyle())
+                            .tint(.white)
+                            .scaleEffect(4)
+                            .padding(80)
+                    } else {
+                        ScrollView {
+                            Text(answerResponse)
+                                .font(.title2)
+                                .foregroundStyle(.white)
+                            
+                            Button( totalQuestions == numberOfQuestions  ? "Show Score" : "Next Question"){
+                                showingSolutionSheet = false
+                                if ( totalQuestions != numberOfQuestions ) {
+                                    generateQuestion()
+                                }
+                                else {
+                                    withAnimation(.bouncy(duration: 2)){
+                                        isFinal = true
+                                        isAlerting = false
+                                    }
+                                }
+                                withAnimation {
+                                    animationAngle += Angle(degrees: 360)
+                                }
+                            }
+                            .font(.title)
+                            .padding()
+                            .background(.ultraThinMaterial)
+                            .clipShape(.rect(cornerRadius: 20))
+                            .foregroundStyle(.white)
+                        }
+                        .scrollIndicators(.hidden
+                        )
+                        .padding(.horizontal)
+                    }
+                    
+                }
+                .frame(maxWidth: .infinity , maxHeight: .infinity)
+                .background(.brown)
+            })
             .sheet(isPresented: $isAlerting, onDismiss: {
                 generateQuestion()
             } ,content: {
@@ -151,6 +220,8 @@ struct SecondPage: View {
                             .aspectRatio(1, contentMode: .fit)
                             .shadow(color : .white ,radius: 10)
                             .shadow(color : .white , radius: 10)
+                        
+                        
                     }
                     .frame(width: 300)
                     .background(.mint)
@@ -159,6 +230,17 @@ struct SecondPage: View {
                     .shadow(color : .white , radius: 10)
                     .padding()
                     
+                    if !isCorrect {
+                        Button("Ask solution from AI 🤖"){
+                            isAlerting = false
+                            showingSolutionSheet = true
+                            generateAnswer()
+                        }.font(.title)
+                            .padding()
+                            .background(.ultraThinMaterial)
+                            .clipShape(.rect(cornerRadius: 20))
+                            .foregroundStyle(.white)
+                    }
                     Button( totalQuestions == numberOfQuestions  ? "Show Score" : "Next Question"){
                         if ( totalQuestions != numberOfQuestions ) {
                             generateQuestion()
@@ -261,10 +343,25 @@ struct SecondPage: View {
         generateResponse()
     }
     
+    func generateAnswer(){
+        isLoading = true
+        answerResponse = ""
+        let userInput = "solve this question \(question!) for a student of class \(standard) step by step so it is easy to understand"
+        Task {
+            do  {
+                let result = try await model.generateContent(userInput)
+                isLoading = false
+                answerResponse = LocalizedStringKey (  result.text ?? "No response found" )
+            } catch {
+                answerResponse = "Something went wrong \n \(error.localizedDescription)"
+            }
+        }
+        
+    }
     func generateResponse() {
         isLoading = true
         response = ""
-        let userInput = "generate \(numberOfQuestions) questions of standard \(standard) and of difficulty \(difficulty)  and the answer should be numberic only without any use of any alphabets or special characters like e or variables 'x' or symbols like power or - in it , your output should be completely an json array in which every question is mapped with its numeric answer without any other detail"
+        let userInput = "generate \(numberOfQuestions) questions of standard \(standard) and of difficulty \(difficulty == "hard" ? "higher order thinking skills of olympiad level" : "\(difficulty)")  and the answer should be numberic only without any use of any alphabets or special characters like e or variables 'x' or symbols like power or - in it , your output should be completely an json array in which every question is mapped with its numeric answer without any other detail"
         Task {
             do {
                 let result = try await model.generateContent(userInput)

@@ -15,7 +15,7 @@ struct FirstPage: View {
     @State private var difficulty = "Easy"
     @State private var gradeClass = 1
     let difficultyChoices = ["Easy" , "Medium" , "Hard"]
-    let classes = [1 , 2, 3, 4, 5]
+    let classes = [1 , 2, 3, 4, 5 , 6, 7, 8]
     var body: some View {
         NavigationStack {
             ZStack{
